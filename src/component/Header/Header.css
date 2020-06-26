@@ -1,0 +1,21 @@
+.Header-navbar {
+    background-color: #023075;
+}
+
+
+.Header-nav  {
+    font-size: 20px;
+}
+
+
+#navbarNav a {
+    color: white;
+}
+
+#navbarNav a:active {
+background-color: grey;
+}
+
+.navbar-brand {
+    color: white;
+}
