@@ -1,21 +1,80 @@
-.Header-navbar {
+/*
+This file contain all the css for the Header / nav /navbar / menu / mobile menu / navbrand
+Modify ths file if you wish to modify the style of the element cited above
+* Unprocessed CSS *
+*/
+
+                                                /* Desktop navbar */
+
+/* header menu */
+.Header {
     background-color: #023075;
+    padding: none;
+    margin: none;
 }
 
-
-.Header-nav  {
-    font-size: 20px;
+/* navbar brand, can be replaced with a logo/img, temp text only */
+.navbar-brand  {
+    color: white; 
 }
 
+.navbar-brand:active  {
+    color: white; 
+}
 
-#navbarNav a {
+/* nav item-link, menu link and item */
+.nav-item .nav-link  {
+    color: #fff;
+}
+
+.nav-item .nav-link:active {
+    color: rgb(206, 206, 206);
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(206, 206, 206);
+}
+
+.navbar-nav  li {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* navbar button elements */
+
+.navbar button {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navbar button:first-child {
+    background-color: #C23D2B;
     color: white;
+    margin-right: 20px;
 }
 
-#navbarNav a:active {
-background-color: grey;
-}
-
-.navbar-brand {
+.navbar button:first-child {
+    background-color: #C23D2B;
     color: white;
+    margin-right: 20px;
+}
+
+.navbar button:first-child:hover {
+    background-color: #E5E9F2;
+    color: #C23D2B;
+    margin-right: 20px;
+    font-size: 17px;   
+}
+
+.navbar button:last-child {
+    background-color: #185DC2;
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar button:last-child:hover {
+    background-color: #E5E9F2;
+    color: #185DC2;
+    margin-right: 20px;
+    font-size: 17px;   
 }

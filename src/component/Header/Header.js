@@ -6,28 +6,45 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <nav class="Header-navbar navbar navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg  primary-color">
                     <a className="navbar-brand" href="#">Currex</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
+                        aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className=" Header-nav collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled" href="#">Disabled</a>
-                        </li>
+                    
+                    <div className="collapse navbar-collapse">
+
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">Home
+                                <span className="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">About</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Data</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
+                    
+
+                        <form className="form-inline">
+                            <div className="md-form my-0">
+                                <button className="btn btn-md nav-btn pulse">Get the App</button>
+                                <button className="btn btn-md nav-btn pulse">Login</button>
+                            </div>
+                        </form>
                     </div>
+                
+
                 </nav>
+
 
             </div>
         )
