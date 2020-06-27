@@ -13,9 +13,15 @@ Modify ths file if you wish to modify the style of the element cited above
     margin: none;
 }
 
+.Header .navbar {
+    padding: 0;
+}
+
 /* navbar brand, can be replaced with a logo/img, temp text only */
 .navbar-brand  {
     color: white; 
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 .navbar-brand:active  {
@@ -25,6 +31,8 @@ Modify ths file if you wish to modify the style of the element cited above
 /* nav item-link, menu link and item */
 .nav-item .nav-link  {
     color: #fff;
+    padding: 1rem;
+
 }
 
 .nav-item .nav-link:active {
@@ -78,3 +86,18 @@ Modify ths file if you wish to modify the style of the element cited above
     margin-right: 20px;
     font-size: 17px;   
 }
+
+li .nav-item .active {
+    background-color: #185DC2;
+}
+
+/* effect active tab change color */
+ .navbar-nav > .active > a, 
+ .navbar-nav > .active > a:focus, 
+ .navbar-nav > .active > a:hover {
+    color: rgb(255, 255, 255);
+    background-color: red
+}
+
+                                                /* Mobile/responsive menu */
+
