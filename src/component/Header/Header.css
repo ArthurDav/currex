@@ -1,0 +1,126 @@
+/*
+This file contain all the css for the Header / nav /navbar / menu / mobile menu / navbrand
+Modify ths file if you wish to modify the style of the element cited above
+* Unprocessed CSS *
+*/
+
+                                                /* Desktop navbar */
+
+/* header menu */
+.Header nav {
+    background-color: #023075;
+    padding: none;
+    margin: none;
+}
+
+.Header .navbar {
+    padding: 0;
+    background-color: #023075;
+}
+
+/* navbar brand, can be replaced with a logo/img, temp text only */
+.navbar-brand  {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+/* nav item-link, menu link and item */
+#basic-navbar-nav .nav-link  {
+    color: #fff;
+    padding: 1rem;  
+    font-weight: 700;
+}
+
+#basic-navbar-nav .nav-link:hover  {
+    color: rgb(209, 209, 209);
+    padding: 1rem;  
+    font-weight: 700;
+}
+
+
+#basic-navbar-nav .nav-link:active, 
+#basic-navbar-nav .nav-link:focus {
+    color: #fff;
+    padding: 1rem;  
+    font-weight: 700;
+    background-color: #C23D2B;
+    border-radius: 5px;
+}
+
+
+/* navbar button elements */
+
+.navbar button {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navbar button:first-child {
+    background-color: #C23D2B;
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar button:first-child {
+    background-color: #C23D2B;
+    color: white;
+    margin-right: 20px;
+    border: none;
+}
+
+.navbar button:first-child:hover {
+    background-color: #E5E9F2;
+    color: #C23D2B;
+    margin-right: 20px;
+    font-size: 17px;   
+}
+
+.navbar button:last-child {
+    background-color: #185DC2;
+    color: white;
+    margin-right: 20px;
+    border: none;
+}
+
+.navbar button:last-child:hover {
+    background-color: #E5E9F2;
+    color: #185DC2;
+    margin-right: 20px;
+    font-size: 17px;   
+}
+
+
+/* responsive nav */
+
+#navbar-toggler {
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    
+}
+
+@media (max-width: 576px) {
+    .navbar button {
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 17px;
+        margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .navbar button {
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 17px;
+        margin-top: 10px;
+    }
+  }
