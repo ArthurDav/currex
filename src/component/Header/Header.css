@@ -7,7 +7,7 @@ Modify ths file if you wish to modify the style of the element cited above
                                                 /* Desktop navbar */
 
 /* header menu */
-.Header {
+.Header nav {
     background-color: #023075;
     padding: none;
     margin: none;
@@ -15,6 +15,7 @@ Modify ths file if you wish to modify the style of the element cited above
 
 .Header .navbar {
     padding: 0;
+    background-color: #023075;
 }
 
 /* navbar brand, can be replaced with a logo/img, temp text only */
@@ -29,24 +30,27 @@ Modify ths file if you wish to modify the style of the element cited above
 }
 
 /* nav item-link, menu link and item */
-.nav-item .nav-link  {
+#basic-navbar-nav .nav-link  {
     color: #fff;
-    padding: 1rem;
-
+    padding: 1rem;  
+    font-weight: 700;
 }
 
-.nav-item .nav-link:active {
-    color: rgb(206, 206, 206);
+#basic-navbar-nav .nav-link:hover  {
+    color: rgb(209, 209, 209);
+    padding: 1rem;  
+    font-weight: 700;
 }
 
-.nav-item .nav-link:hover {
-    color: rgb(206, 206, 206);
+
+#basic-navbar-nav .nav-link:active, 
+#basic-navbar-nav .nav-link:focus {
+    color: #fff;
+    padding: 1rem;  
+    font-weight: 700;
+    background-color: red;
 }
 
-.navbar-nav  li {
-    font-size: 17px;
-    font-weight: 600;
-}
 
 /* navbar button elements */
 
@@ -65,6 +69,7 @@ Modify ths file if you wish to modify the style of the element cited above
     background-color: #C23D2B;
     color: white;
     margin-right: 20px;
+    border: none;
 }
 
 .navbar button:first-child:hover {
@@ -78,6 +83,7 @@ Modify ths file if you wish to modify the style of the element cited above
     background-color: #185DC2;
     color: white;
     margin-right: 20px;
+    border: none;
 }
 
 .navbar button:last-child:hover {
@@ -87,17 +93,27 @@ Modify ths file if you wish to modify the style of the element cited above
     font-size: 17px;   
 }
 
-li .nav-item .active {
-    background-color: #185DC2;
+
+/* responsive nav */
+
+#navbar-toggler {
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
-/* effect active tab change color */
- .navbar-nav > .active > a, 
- .navbar-nav > .active > a:focus, 
- .navbar-nav > .active > a:hover {
-    color: rgb(255, 255, 255);
-    background-color: red
+#navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    
 }
 
-                                                /* Mobile/responsive menu */
-
+@media (min-width: 576px) {
+    .navbar button {
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 17px;
+        margin-top: 10px;
+    }
+  }

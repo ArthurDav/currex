@@ -1,55 +1,35 @@
 import React, {Component} from 'react'
 import './Header.css'
+import {Navbar, Nav,Button,Form} from 'react-bootstrap'
 
+/*
+    Header component for navbar nav 
+    Navbar for desktop and                                         
+*/
 
 class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <nav className="navbar navbar-expand-lg  primary-color">
-                    <a className="navbar-brand" href="#">Currex</a>
-
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"
-                        aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div className="collapse navbar-collapse">
-
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">Home
-                                <span className="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Data</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    
-
-                        <form className="form-inline">
-                            <div className="md-form my-0">
-                                <button className="btn btn-md nav-btn pulse">Get the App</button>
-                                <button className="btn btn-md nav-btn pulse">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                
-
-                </nav>
-
-
+                <Navbar className="navbar" expand="lg">
+                    <Navbar.Brand href="#home">Currex</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" id="navbar-toggler" />
+                    <Navbar.Collapse className="Header-navbar" id="basic-navbar-nav">
+                        <Nav className="mr-auto" defaultActiveKey="#home" >
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#link">About</Nav.Link>
+                        <Nav.Link href="#link">Data</Nav.Link>
+                        <Nav.Link href="#link">Contact</Nav.Link>
+                        </Nav>
+                        <Form className="nav-form" id="nav-form">
+                            <Button>Get the APP</Button>
+                            <Button>Login</Button>
+                        </Form>
+                    </Navbar.Collapse>
+                    </Navbar>
             </div>
         )
     }
 }
-
 
 export default Header
