@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import './Header.css'
 import {Navbar, Nav,Button,Form} from 'react-bootstrap'
+import logo from './images/rsz_logo_transparent.png'
 
 /*
     Header component for navbar nav 
-    Navbar for desktop and                                         
+    Navbar for desktop and mobile, using boostrap 4.5 for react                                 
 */
 
 class Header extends Component {
@@ -12,7 +13,15 @@ class Header extends Component {
         return (
             <div className="Header">
                 <Navbar className="navbar" expand="lg">
-                    <Navbar.Brand href="#home">Currex</Navbar.Brand>
+                    <Navbar.Brand href="#home">
+                        <img
+                            src={logo}
+                            width="80"
+                            height="80"
+                            className="d-inline-block align-top"
+                            alt="React Bootstrap logo"
+                        />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" id="navbar-toggler" />
                     <Navbar.Collapse className="Header-navbar" id="basic-navbar-nav">
                         <Nav className="mr-auto" defaultActiveKey="#home" >

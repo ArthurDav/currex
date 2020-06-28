@@ -20,13 +20,8 @@ Modify ths file if you wish to modify the style of the element cited above
 
 /* navbar brand, can be replaced with a logo/img, temp text only */
 .navbar-brand  {
-    color: white; 
     padding-left: 10px;
     padding-right: 20px;
-}
-
-.navbar-brand:active  {
-    color: white; 
 }
 
 /* nav item-link, menu link and item */
@@ -48,7 +43,8 @@ Modify ths file if you wish to modify the style of the element cited above
     color: #fff;
     padding: 1rem;  
     font-weight: 700;
-    background-color: red;
+    background-color: #C23D2B;
+    border-radius: 5px;
 }
 
 
@@ -107,7 +103,18 @@ Modify ths file if you wish to modify the style of the element cited above
     
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+    .navbar button {
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 17px;
+        margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 992px) {
     .navbar button {
         display: inline-flex;
         text-align: center;
