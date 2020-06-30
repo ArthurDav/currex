@@ -1,0 +1,58 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#CurrencyRow input {
+    width: 450px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+
+input:focus {
+    border: red;
+}
+
+select {
+    height: 70px;
+    border-radius: 10px;
+    background-color: #185DC2;
+    color: white;
+    font-weight: 600;
+    width: 150;
+    border-color: none;
+    box-shadow: none;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.box select {
+    background-color: #185DC2;
+
+    color: white;
+    padding: 12px;
+    width: 150px;
+    border: none;
+    font-size: 20px;
+    appearance: button;
+    -webkit-appearance: auto;
+    -moz-appearance: button;
+    -o-appearance: button;
+    -ms-appearance: button;
+    appearance: button;
+    -ms-appearance: button;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+    
+  }
+  
+  
+  .box select option {
+    padding: 30px;
+    background:url('/src/component/CurrencyRow/image/up.png') no-repeat center;
+  }

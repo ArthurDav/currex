@@ -1,0 +1,29 @@
+.CurrencyRow {
+    height: 800px;
+    width: 100%;
+    background-color: #E5E9F2;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .CurrencyRow-wrapper {
+    padding-top: 25vh;
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .CurrencyRow-bg {
+    background-color: #023075;
+    height: 400px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 20px;
+    display: flex;
+  
+  }
