@@ -1,5 +1,5 @@
- 
 import React from 'react'
+import './CurrencyRow.css'
 
 function CurrencyRow(props) {
     // props
@@ -13,14 +13,13 @@ function CurrencyRow(props) {
 
   // row 
   return (
-    <div>
-      <input type="number" className="input" value={amount || 0} onChange={onChangeAmount} />
+    <div id="CurrencyRow" className="box">
+      <input  type="number" className="input" value={amount || 0} onChange={onChangeAmount} />
 
-      <select value={selectedCurrency || 0} onChange={onChangeCurrency   }>
+      <select id="select" className="select" value={selectedCurrency || 0} onChange={onChangeCurrency}>
         {currencyOptions.map(option => (
             <option key={option} value={option}>{option}</option>
         ))}
-
       </select>
     </div>
   )
