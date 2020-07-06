@@ -1,7 +1,8 @@
 .CurrencyRow {
     height: 800px;
     width: 100%;
-    background-color: #E5E9F2;
+    background-color: #323C59;
+
     align-items: center;
     text-align: center;
     margin: auto;
@@ -13,10 +14,12 @@
     width: 100%;
     align-items: center;
     display: inline-flex;
+    background-color: #323C59;
+
   }
   
   .CurrencyRow-bg {
-    background-color: #023075;
+    background-color: #1F2740;
     height: 400px;
     width: 100%;
     align-content: center;
@@ -26,4 +29,14 @@
     border-radius: 20px;
     display: flex;
   
+  }
+
+
+  #CurrencyRow-subWrapper {
+    padding: 13em;
+}
+
+  .Currency-title {
+      color: white;
+      display: flex;
   }

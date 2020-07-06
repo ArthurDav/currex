@@ -65,8 +65,9 @@ function Currency() {
   }
   return (
         <Container className="CurrencyRow-wrapper">
-          <Row className="CurrencyRow-bg">
-              <Col sm={12}>
+          <Row className="CurrencyRow-bg d-flex" >
+          
+              <Col id="CurrencyRow-subWrapper" className="justify-content-center" sm={12} >
                 <CurrencyRow
                 currencyOptions={currencyOptions}
                 selectedCurrency={fromCurrency}
