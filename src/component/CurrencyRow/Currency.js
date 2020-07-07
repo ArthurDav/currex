@@ -5,6 +5,33 @@ import './Currency.css'
 //API Exchange rates
 const BASE_URL = 'https://api.exchangeratesapi.io/latest'
 
+/* 
+Currency Component
+Currency is the parent of CurrencyRow
+
+Currency render the whole proccess of the currency conversion
+
+The organisation of the Component is  : 
+
+Defining our Currency options as useState to manipulate the state undirectly.
+
+Defining toAmount from Amount think os this line "toAmount = amount * exchangeRate" 
+So you understand what define amount mean 
+
+Fetching the data from the API URL 
+Unpacking the data and distribute the options from our data
+
+Then converting amount in both way depending of the input 
+I use hooks useEffect() here more about it 
+Hooks *** https://reactjs.org/docs/hooks-effect.html ***
+
+Since this component is the parent bootstrap modules are imported to make the 
+code shorter and cleaner
+
+*/
+
+
+
 
 function Currency() {
 
@@ -32,12 +59,13 @@ function Currency() {
     fromAmount = amount / exchangeRate
   }
 
-  // fetch ftw
+  // fetch data from our BASE_URL convert the res as json
+  // then define each options unpacking the data
   useEffect(() => {
     fetch(BASE_URL)
       .then(res => res.json())
       .then(data => {
-        const firstCurrency = Object.keys(data.rates)[0]
+        const firstCurrency = Object.keys(data.rates)[1] // 1 in the array = EU
         setCurrencyOptions([data.base, ...Object.keys(data.rates)])
         setFromCurrency(data.base)
         setToCurrency(firstCurrency)
@@ -84,7 +112,6 @@ function Currency() {
                 amount={toAmount}
                 />
               </Col>
-          
           </Row>
         </Container>
   );

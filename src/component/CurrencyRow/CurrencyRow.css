@@ -1,8 +1,4 @@
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
+/* This file contain all the styling for the component CurrencyRow */
 
 
 #CurrencyRow input {
@@ -13,7 +9,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding-right: 20px;
 }
 
-
 input:focus {
     border: red;
 }
@@ -21,7 +16,6 @@ input:focus {
 select {
     height: 70px;
     border-radius: 10px;
-    
     color: white;
     font-weight: 600;
     width: 150;
@@ -31,8 +25,8 @@ select {
     appearance: button;
     outline: none;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 @media only screen 
@@ -43,7 +37,6 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         width: 20;
     }
 }
-
 
 .box select {
     background-color: #323C59;
@@ -64,7 +57,6 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     
   }
   
-  
   .box select option {
     padding: 30px;
     background:url('/src/component/CurrencyRow/image/up.png') no-repeat center;
@@ -74,7 +66,6 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       font-weight: 600  ;
       font-size: 45px;
   }
-
 
   #CurrencyRow-subWrapper {
     padding-top: 0;

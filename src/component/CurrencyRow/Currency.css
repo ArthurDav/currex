@@ -11,6 +11,7 @@
   
   .CurrencyRow-wrapper {
     padding-top: 25vh;
+    padding-bottom: 25vh;
     width: 100%;
     align-items: center;
     display: inline-flex;
@@ -31,10 +32,6 @@
   
   }
 
-
-  #CurrencyRow-subWrapper {
-    padding: 13em;
-}
 
   .Currency-title {
       color: white;
