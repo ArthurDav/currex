@@ -5,8 +5,8 @@
     width: 450px;
     height: 70px;
     border-radius: 10px;
-    margin-right: 20px;
-    padding-right: 20px;
+    margin-right: 30px;
+   
 }
 
 input:focus {
@@ -67,6 +67,23 @@ select {
       font-size: 45px;
   }
 
-  #CurrencyRow-subWrapper {
-    padding-top: 0;
-}
+  /* Medium devices (tablets, 768px and -) */
+@media (max-width: 768px) { 
+    #CurrencyRow input {
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 10px;
+    }
+ }
+
+  /* Small devices (tablets, 488px and -) */
+
+ @media (max-width: 485px) { 
+    #CurrencyRow input {
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    }
+ }

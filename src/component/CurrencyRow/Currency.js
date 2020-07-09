@@ -93,24 +93,26 @@ function Currency() {
   }
   return (
         <Container className="CurrencyRow-wrapper">
-          <Row className="CurrencyRow-bg d-flex" >
+          <Row className="CurrencyRow-bg" >
           
-              <Col id="CurrencyRow-subWrapper" className="justify-content-center" sm={12} >
-                <CurrencyRow
-                currencyOptions={currencyOptions}
-                selectedCurrency={fromCurrency}
-                onChangeCurrency={e => setFromCurrency(e.target.value)} // check your stackoverflow answer
-                onChangeAmount={handleFromAmountChange}
-                amount={fromAmount}
-                />
-                <div className="equals">=</div>
-                <CurrencyRow
-                currencyOptions={currencyOptions}
-                selectedCurrency={toCurrency}
-                onChangeCurrency={e => setToCurrency(e.target.value)}
-                onChangeAmount={handleToAmountChange}
-                amount={toAmount}
-                />
+              <Col  sm={12} className="d-flex justify-content-center align-items-center " >
+                <div id="CurrencyRow-subWrapper" className="">
+                  <CurrencyRow
+                  currencyOptions={currencyOptions}
+                  selectedCurrency={fromCurrency}
+                  onChangeCurrency={e => setFromCurrency(e.target.value)} // check your stackoverflow answer
+                  onChangeAmount={handleFromAmountChange}
+                  amount={fromAmount}
+                  />
+                  <div className="equals">=</div>
+                  <CurrencyRow
+                  currencyOptions={currencyOptions}
+                  selectedCurrency={toCurrency}
+                  onChangeCurrency={e => setToCurrency(e.target.value)}
+                  onChangeAmount={handleToAmountChange}
+                  amount={toAmount}
+                  />
+                </div>
               </Col>
           </Row>
         </Container>
